@@ -1,0 +1,184 @@
+@charset "UTF-8";
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+html {
+  font-size: 62.5%;
+  /*для работы с rem*/
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 25px;
+  font-style: normal;
+  background: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 93px 115px 0 115px;
+}
+
+ul {
+  list-style: none;
+}
+
+table,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: auto;
+}
+
+.App {
+  margin-bottom: 5rem;
+}
+.App-header {
+  padding: 2rem;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+}
+.App-header-container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (min-width: 600px) {
+  .App-header-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.App-header-title {
+  color: #61dafb;
+  text-align: center;
+  margin: 0px;
+  letter-spacing: 0.01em;
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+.App-header-logo {
+  max-width: 10rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.App-header-description {
+  margin-top: 2rem;
+}
+
+.App-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.App-body .sortBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.App-body-table {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.btn,
+.btnClass {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn-default,
+.btnClass-default {
+  color: #333;
+  background-color: #ffffff;
+  border-color: #ccc;
+}
+
+.col-sm {
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+
+.col-sm:nth-child(4) {
+  margin-right: 0;
+}
+
+@media (max-width: 60rem) {
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 20rem) {
+  .size-font {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding-top: 6rem;
+  }
+}
